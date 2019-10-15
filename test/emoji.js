@@ -197,7 +197,7 @@ describe("emoji.js", function() {
     it("should parse a complex emoji like woman-kiss-woman and replace it with code", function() {
       var coffee = emoji.unemojify("I love 👩‍❤️‍💋‍👩");
       should.exist(coffee);
-      coffee.should.be.exactly("I love :kiss_woman,_woman:");
+      coffee.should.be.exactly("I love :kiss_woman_woman:");
     });
   });
 
