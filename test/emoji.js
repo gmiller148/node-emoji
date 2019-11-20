@@ -189,7 +189,7 @@ describe("emoji.js", function() {
     it("should parse emoji and replace them with :emoji:", function() {
       var coffee = emoji.unemojify("🧑‍🍳");
       should.exist(coffee);
-      coffee.should.be.exactly(":person_cook:");
+      coffee.should.be.exactly(":Cook:");
     });
     it("should parse emoji and replace them with :emoji:", function() {
       var coffee = emoji.unemojify("I ❤️  ☕️! -  😯⭐️😍  ::: test : : 👍+");
