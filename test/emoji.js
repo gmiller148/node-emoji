@@ -187,6 +187,13 @@ describe("emoji.js", function() {
 
   describe("unemojify(str)", function() {
     it("should parse emoji and replace them with :emoji:", function() {
+      var coffee = emoji.unemojify("🧑‍🍳");
+      should.exist(coffee);
+      coffee.should.be.exactly(
+        "I :heart:  :hot_beverage:! -  :hushed_face::star::smiling_face_with_heart-eyes:  ::: test : : :thumbs_up:+"
+      );
+    });
+    it("should parse emoji and replace them with :emoji:", function() {
       var coffee = emoji.unemojify("I ❤️  ☕️! -  😯⭐️😍  ::: test : : 👍+");
       should.exist(coffee);
       coffee.should.be.exactly(
